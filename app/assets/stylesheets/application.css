@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cv-section {
+  border-left: 3px dashed black;
+}

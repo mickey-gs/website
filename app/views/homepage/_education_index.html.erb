@@ -1,3 +1,19 @@
-<% @education.each do |ed| %>
-  <p>woah</p>
-<% end %>
+<h2>Education</h2>
+<div class="cv-section">
+  <% @education.each do |ed| %>
+    <div class="education">
+      <h3 class="date">
+        <%= ed.received_date ? ed.received_date.strftime("%b %y") : "Ongoing" %>
+      </h3>
+      <h3 class="title">
+        <%= ed.title + ", " %>
+        <span class="location">
+          <%= ed.location %>
+        </span>
+      </h3>
+      <p class="description">
+        <%= ed.description %>
+      </p>
+    </div>
+  <% end %>
+</div>

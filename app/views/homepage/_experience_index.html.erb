@@ -1,3 +1,20 @@
-<% @experience.each do |ex| %>
-  <p>waow</p>
-<% end %>
+<h2>Experience</h2>
+<div class="cv-section">
+  <% @experience.each do |ex| %>
+    <div class="experience">
+      <h3 class="date">
+        <%= ex.start_date.strftime("%b %y") %> -
+        <%= ex.end_date.strftime("%b %y") %>
+      </h3>
+      <h3 class="title">
+        <%= ex.title + ", " %>
+        <span class="location">
+          <%= ex.location %>
+        </span>
+      </h3>
+      <p class="description">
+        <%= ex.description %>
+      </p>
+    </div>
+  <% end %>
+</div>
