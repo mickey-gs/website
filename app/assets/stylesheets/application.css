@@ -20,6 +20,24 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+h3 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.title {
+  color: #023e8a;
+}
+
 .cv-section {
-  border-left: 3px dashed black;
+  border-left: 3px dashed #03045e;
+  padding: 0 2.5% 0 2.5%;
+}
+
+#wrapper {
+  width: 60%;
+  margin: auto;
 }

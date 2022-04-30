@@ -2,14 +2,18 @@
 <div class="cv-section">
   <% @experience.each do |ex| %>
     <div class="experience">
-      <h3 class="date">
-        <%= ex.start_date.strftime("%b %y") %> -
-        <%= ex.end_date.strftime("%b %y") %>
-      </h3>
-      <h3 class="title">
-        <%= ex.title + ", " %>
+      <h3>
+        <span class="title">
+          <%= ex.title %>
+        </span>
+        
         <span class="location">
-          <%= ex.location %>
+          <%= " - " + ex.location %>
+        </span>
+
+        <span class="date">
+          <%= ex.start_date.strftime("%b %y") %> -
+          <%= ex.end_date.strftime("%b %y") %>
         </span>
       </h3>
       <p class="description">

@@ -2,13 +2,15 @@
 <div class="cv-section">
   <% @education.each do |ed| %>
     <div class="education">
-      <h3 class="date">
-        <%= ed.received_date ? ed.received_date.strftime("%b %y") : "Ongoing" %>
-      </h3>
-      <h3 class="title">
-        <%= ed.title + ", " %>
+      <h3>
+        <span class="title">
+          <%= ed.title %>
+        </span>
         <span class="location">
-          <%= ed.location %>
+          <%= " - " + ed.location %>
+        </span>
+        <span class="date">
+          <%= "(#{ed.received_date ? ed.received_date.strftime("%b %y") : "Ongoing"})"%>
         </span>
       </h3>
       <p class="description">
